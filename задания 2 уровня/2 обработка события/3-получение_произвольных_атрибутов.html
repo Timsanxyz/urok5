@@ -22,4 +22,20 @@
     каждого атрибута и выведите в консоль.
     -->
 </body>
+
+<script>
+    'use strict';
+
+    let element = document.querySelector("div");
+
+    element.addEventListener('click', function (event){
+        console.log(event.target.getAttribute('class'));
+        console.log(event.target.getAttribute('id'));
+        console.log(event.target.getAttribute('tabindex'));
+        console.log(event.target.getAttribute('aria-labelledby'));
+        console.log(event.target.getAttribute('aria-hidden'));
+
+
+    });
+</script>
 </html>
