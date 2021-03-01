@@ -17,7 +17,14 @@
     -->
 
     <script>
+    'use strict';
 
+    let elements = document.querySelectorAll(".one");
+    //console.log(elements);
+
+    for (let i = 0; i < elements.length; i++){
+        console.log(elements[i].tagName);
+    }
     </script>
 </body>
 </html>
